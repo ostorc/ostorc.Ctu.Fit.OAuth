@@ -5,10 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ostorc.Ctu.Fit.OAuth", "src\ostorc.Ctu.Fit.OAuth\ostorc.Ctu.Fit.OAuth.csproj", "{AFB9C74D-F09B-4852-BBC1-144B6EC3D814}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9C274487-0C1F-4C33-A670-55933731732F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{59517063-6163-4AA3-B0FD-52C95A92513D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ostorc.Ctu.Fit.OAuth.Example", "src\ostorc.Ctu.Fit.OAuth.Example\ostorc.Ctu.Fit.OAuth.Example.csproj", "{03C6736A-A973-4318-93FB-7759FB12AF5D}"
 EndProject
 Global
@@ -30,7 +26,5 @@ Global
 		{03C6736A-A973-4318-93FB-7759FB12AF5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AFB9C74D-F09B-4852-BBC1-144B6EC3D814} = {9C274487-0C1F-4C33-A670-55933731732F}
-		{03C6736A-A973-4318-93FB-7759FB12AF5D} = {59517063-6163-4AA3-B0FD-52C95A92513D}
 	EndGlobalSection
 EndGlobal

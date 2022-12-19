@@ -4,9 +4,18 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
+        <Authors>Ondřej Štorc</Authors>
+        <PackageDescription>Add support for FIT CTU OAuth login</PackageDescription>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/ostorc/ostorc.Ctu.Fit.OAuth</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
