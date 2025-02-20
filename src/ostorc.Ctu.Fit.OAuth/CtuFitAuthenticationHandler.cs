@@ -10,9 +10,12 @@ namespace ostorc.Ctu.Fit.OAuth;
 
 public class CtuFitAuthenticationHandler : OAuthHandler<CtuFitAuthenticationOptions>
 {
-    public CtuFitAuthenticationHandler(IOptionsMonitor<CtuFitAuthenticationOptions> options, ILoggerFactory logger,
-        UrlEncoder encoder, ISystemClock clock) : base(options, logger, encoder, clock)
+    public CtuFitAuthenticationHandler(IOptionsMonitor<CtuFitAuthenticationOptions> options,
+        ILoggerFactory logger,
+        UrlEncoder encoder,
+        TimeProvider timeProvider) : base(options, logger, encoder)
     {
+        options.OnChange(authenticationOptions => authenticationOptions.TimeProvider = timeProvider);
     }
 
     protected override async Task<OAuthTokenResponse> ExchangeCodeAsync(OAuthCodeExchangeContext context)
